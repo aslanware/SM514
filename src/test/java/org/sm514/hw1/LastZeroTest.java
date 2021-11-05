@@ -23,7 +23,10 @@ public class LastZeroTest {
 
     @Parameters
     public static Collection<Object[]> parameters () {
-        return Arrays.asList(new Object[][] { { new int[] {1,1,1,0}, 3 }, { new int [] {1,1,0,0}, 3 } });
+        Object[] testCase1 = {new int[]{1, 1, 1, 0}, 3};
+        Object[] testCase2 = {new int[]{1, 1, 0, 0}, 3};
+
+        return Arrays.asList(new Object[][] {testCase1, testCase2});
     }
 
     @Test
